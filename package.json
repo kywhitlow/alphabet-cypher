@@ -1,0 +1,20 @@
+{
+  "name": "alphabet-cypher",
+  "version": "1.0.0",
+  "author": "dmcmullen",
+  "repository": "https://github.com/danielmcmullen/alphabet-cypher",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watchAll",
+    "start": "./node_modules/@babel/node/bin/babel-node.js"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  },
+  "main": "src/index.js"
+}
