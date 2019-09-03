@@ -21,6 +21,26 @@ describe('Alphabet Cypher', () => {
     });
   });
 
+  describe('Encode', () => {
+    it('can encode a message with vigilance as a secret keyword', () => {
+      const secretKeyword = 'vigilance'
+      const message = 'meetmeontuesdayeveningatseven'
+
+      const encodedMessage = Cypher.encode2(secretKeyword, message)
+
+      expect(encodedMessage).toBe('hmkbxebpxpmyllyrxiiqtoltfgzzv')
+    });
+    
+    it('can encode a message with scones as a secret keyword', () => {
+      const secretKeyword = 'scones'
+      const message = 'meetmebythetree'
+
+      const encodedMessage = Cypher.encode2(secretKeyword, message)
+
+      expect(encodedMessage).toBe('egsgqwtahuiljgs')
+    });
+  });
+
   describe('Decode', () => {
     it('can decode a message with vigilance as a secret keyword', () => {
       const secretKeyword = 'vigilance'
